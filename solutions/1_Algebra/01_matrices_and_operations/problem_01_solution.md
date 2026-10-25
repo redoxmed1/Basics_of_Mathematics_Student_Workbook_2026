@@ -1,49 +1,66 @@
-### Exercise 1. Matrix entries and rows/columns
+### Exercise 1. Matrix Size and Entries
 
-## Question
+**Problem**
 
-Let \(A\) be a \(2\times3\) matrix and \(B\) be a \(3\times2\) matrix, with the following entries and parts:
+Given
 
 $$
 A=
 \begin{pmatrix}
-a_{11} & -1 & a_{13} \\
+2 & -1 & 3 \\
 0 & 4 & 5
 \end{pmatrix},
 \qquad
 B=
 \begin{pmatrix}
-1 & b_{12} \\
--2 & b_{22} \\
+1 & 0 \\
+-2 & 3 \\
 4 & 1
 \end{pmatrix}.
 $$
 
-Find \(a_{12}\), \(a_{23}\), \(b_{21}\), and \(b_{32}\). Also write the second row of \(A\) and the first column of \(B\).
+1. State the sizes of matrices A and B.
+2. Read off the entries a_12, a_23, b_21, and b_32.
+3. Write the second row of A and the first column of B as vectors.
 
-## Solution
+**Solution**
 
-The first index in an entry such as \(a_{ij}\) identifies the **row**, and the second index identifies the **column**. Therefore, \(a_{ij}\) is found at row \(i\), column \(j\). Matrix \(A\) has 2 rows and 3 columns, so its size is \(2\times3\); matrix \(B\) has 3 rows and 2 columns, so its size is \(3\times2\).
+**1. Matrix sizes**
 
-- \(a_{12}=-1\): row 1, column 2 of \(A\).
-- \(a_{23}=5\): row 2, column 3 of \(A\).
-- \(b_{21}=-2\): row 2, column 1 of \(B\).
-- \(b_{32}=1\): row 3, column 2 of \(B\).
-
-The second row of \(A\) is obtained by reading across row 2:
+The size of a matrix is the number of rows followed by the number of columns. Matrix A has 2 rows and 3 columns, while matrix B has 3 rows and 2 columns. Therefore,
 
 $$
-\begin{pmatrix}
-0 & 4 & 5
-\end{pmatrix}
+A\text{ is }2\times 3,
+\qquad
+B\text{ is }3\times 2.
 $$
 
-The first column of \(B\) is obtained by reading down column 1:
+**2. Entries**
+
+In a_ij or b_ij, the first index gives the row and the second index gives the column.
+
+- a_12 is in row 1, column 2 of A, so a_12=-1.
+- a_23 is in row 2, column 3 of A, so a_23=5.
+- b_21 is in row 2, column 1 of B, so b_21=-2.
+- b_32 is in row 3, column 2 of B, so b_32=1.
+
+**3. Row and column vectors**
+
+The second row of A is
+
+$$
+\begin{pmatrix}0 & 4 & 5\end{pmatrix}.
+$$
+
+The first column of B is
 
 $$
 \begin{pmatrix}
 1 \\
 -2 \\
 4
-\end{pmatrix}
+\end{pmatrix}.
 $$
+
+The entries and vectors are read directly from the stated rows and columns.
+
