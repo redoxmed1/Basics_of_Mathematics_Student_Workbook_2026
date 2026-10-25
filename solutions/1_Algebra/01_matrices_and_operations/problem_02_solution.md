@@ -1,8 +1,8 @@
-### Exercise 2. Matrix addition and scalar multiplication
+### Exercise 2. Addition and Scalar Multiplication
 
-## Question
+**Problem**
 
-Given
+For
 
 $$
 A=
@@ -18,13 +18,13 @@ B=
 \end{pmatrix},
 $$
 
-calculate \(A+B\), \(A-B\), and \(3A-2B\).
+compute A+B, A-B, and 3A-2B. Explain why matrix addition is possible only for matrices of the same size.
 
-## Solution
+**Solution**
 
-Both matrices are \(2\times2\), so corresponding entries have the same row and column indices. Matrix addition and subtraction are performed entry by entry. The matrices must have the same dimensions; otherwise, there is no matching entry at every position.
+Both matrices have size 2× 2, so their corresponding entries can be added and subtracted.
 
-### 1. Addition
+**1. Addition**
 
 Add entries in matching positions:
 
@@ -41,9 +41,9 @@ A+B=
 \end{pmatrix}.
 $$
 
-### 2. Subtraction
+**2. Subtraction**
 
-Subtract each entry of \(B\) from the corresponding entry of \(A\):
+Subtract entries in matching positions:
 
 $$
 A-B=
@@ -58,25 +58,39 @@ A-B=
 \end{pmatrix}.
 $$
 
-### 3. Scalar multiplication and subtraction
+**3. Scalar multiplication before subtraction**
 
-First multiply every entry of \(A\) by 3 and every entry of \(B\) by 2:
+First calculate 3A:
 
 $$
 3A=
 \begin{pmatrix}
+3(1) & 3(2) \\
+3(-1) & 3(3)
+\end{pmatrix}
+=
+\begin{pmatrix}
 3 & 6 \\
 -3 & 9
-\end{pmatrix},
-\qquad
+\end{pmatrix}.
+$$
+
+Then calculate 2B:
+
+$$
 2B=
+\begin{pmatrix}
+2(4) & 2(-2) \\
+2(0) & 2(5)
+\end{pmatrix}
+=
 \begin{pmatrix}
 8 & -4 \\
 0 & 10
 \end{pmatrix}.
 $$
 
-Now subtract the matching entries of \(2B\) from \(3A\):
+Now subtract the two matrices entry by entry:
 
 $$
 3A-2B=
@@ -90,3 +104,5 @@ $$
 -3 & -1
 \end{pmatrix}.
 $$
+
+Matrix addition and subtraction require the same number of rows and columns because each entry must have a corresponding entry in the other matrix. Here, all operations are valid because both matrices are 2× 2.
